@@ -10,8 +10,8 @@ Console.WriteLine("           Phone Number: 9887766433433");
 Console.WriteLine("                   Gst: 123456");
 
 Console.WriteLine(                "Cash Bill");
-
-Console.WriteLine("Bill no: 123  Date : 29-Dec-2025");
+DateTime localDate = DateTime.Now;
+Console.WriteLine($"Bill no: 123  Date :{ localDate}");//datetime .now inbuild funnction
 Console.WriteLine("Counter no:   Ref:234 ");
 //Billing footer 1
 Console.WriteLine("------------------------------------------------");
