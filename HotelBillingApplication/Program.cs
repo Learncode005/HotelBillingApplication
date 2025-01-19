@@ -6,14 +6,17 @@ using HotelBillingApplication;
 
 BillTypeHotel billTypeHotel = new BillTypeHotel();
 
+billTypeHotel.GetInputForBill();
 int billNo = 1;
-bool billingDone = billTypeHotel.GenerateTheHoteBill(billNo);
+//bool billingDone = billTypeHotel.GenerateTheHoteBill(billNo);
 //if (billingDone)
 //{
 //    billNo = billNo + 1;
 //}
 
 //GenerateThevegetableBill();
+
+
   bool GenerateThevegetableBill()
 {
     Console.WriteLine("               F&V EnterPrises");

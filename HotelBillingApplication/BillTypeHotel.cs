@@ -8,8 +8,47 @@ namespace HotelBillingApplication
 {
     public class BillTypeHotel
     {
+        // Create a dictionary to store items and their prices
+     
+        public void GetInputForBill()
+        {
+            Dictionary<string, string> items = new Dictionary<string, string>
+             {
+                 {"1", "Tiffin 30" },
+                 { "2", "Meals 40" }
+              };
+
+            // Display the items and their prices
+            Console.WriteLine("Item List and Prices:");
+           
+
+            Console.WriteLine("Enter Item:");
+
+            // Create a string variable and get user input from the keyboard and store it in the variable
+            string itemName = Console.ReadLine();
+            Console.WriteLine($"Entered item name:{ itemName}");
+
+
+            if (itemName != null)
+            {
+                string value ="";
+         if(items.TryGetValue(itemName, value: out value))
+                {
+                    Console.WriteLine(value);
+                }
+                //foreach (var item in items)
+                //{
+                //    if(itemName == item.Key.ToString())
+                //    {
+                //        Console.WriteLine($"{item.Key}:   ${item.Value}");
+                //    }
+                   
+                //}
+            }
+        }
         public bool GenerateTheHoteBill(int billNo)
         {
+            
             Console.WriteLine("               Sri LaxmiGanapthi Hotel");
             Console.WriteLine("                   Dundigal X Road");
             Console.WriteLine("                  ");
